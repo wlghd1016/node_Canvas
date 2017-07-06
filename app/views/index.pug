@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  button#clear(onclick="clearCanvas()") clear
+  button#save save
+  button#load load
+  input#loadImg(type="file")
+  button#download download
+
+
+  canvas#myCanvas(width="500" height="500" style="border:1px solid #000000;")
